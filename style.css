@@ -1,0 +1,434 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-left {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-left a:hover {
+    color: #c61227;
+}
+
+.nav-right .button {
+    margin-left: 10px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.nav-right .button {
+    background-color: #444;
+    color: #fff;
+}
+
+.nav-right .button:hover {
+    background-color: #333;
+}
+
+.nav-right .button:nth-child(2) {
+    background-color: #64615d;
+}
+
+.nav-right .button:nth-child(2):hover {
+    background-color: #e89d10;
+}
+
+/* Hero Section */
+#home {
+    background-image: url(images/logo2.jpeg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: white;
+    position: relative;
+}
+
+
+.hero {
+    text-align: center;
+    margin-top: 0;
+    padding: 20px;
+    color: #040404;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.hero h1 {
+    
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+/* Features Section */
+#features {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+#features h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#features .features-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.feature-item {
+    max-width: 250px;
+}
+
+.feature-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Diet Plan Section */
+#diet-plan {
+    background-color: #c3c3c3;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#diet-plan h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fbfbff;
+}
+
+#diet-plan p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #151717;
+}
+
+.diet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.diet-item p{
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #3f5199;
+}
+
+.diet-item {
+    background-color: #fafbfff7;
+    border: 1px solid #ddd;
+    
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.diet-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.diet-item p {
+    font-size: 1em;
+    color: #0e0202;
+    line-height: 1.5;
+}
+
+.diet-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Forms Section */
+.forms-section {
+    background-image: url(images/backg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9f8;
+    padding: 20px;
+}
+
+/* Form Container */
+.form-section {
+    background-color: #fff;
+    background-image: url(images/bg1.png);
+    
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out; /* Optional animation for better UX */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.login-section{
+    background-image: url(images/bg1.png);
+}
+
+.form-section h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #fff;
+}
+
+.form-section label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 1em;
+    color: #666;
+    text-align: left;
+}
+
+.form-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-section input:focus {
+    border-color: #fca311;
+    outline: none;
+    box-shadow: 0 0 5px rgba(252, 163, 17, 0.5);
+}
+
+.form-section button {
+    padding: 10px 20px;
+    background-color: #fca311;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.form-section button:hover {
+    background-color: #e89d10;
+}
+
+#close-login, #close-getstarted {
+    margin-top: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+#close-login:hover, #close-getstarted:hover {
+    background-color: #333;
+}
+/* Contact Us Section */
+#contact {
+    background: #f9f9f9; /* Light background for the contact section */
+    padding: 2rem;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Card Style for Contact Form */
+.contact-card {
+    background: white; /* White background for the card */
+    padding: 2rem;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 400px;
+    margin: 0 auto; /* Center the card */
+    background-image: url(images/image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.contact-card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+#contact input, 
+#contact textarea {
+    padding: 0.8rem;
+    margin-bottom: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#contact textarea {
+    resize: vertical; /* Allow vertical resizing of the textarea */
+    min-height: 150px; /* Set a minimum height for the textarea */
+}
+
+#contact button {
+    padding: 0.8rem 2rem;
+    background-color: #ff6347; /* Button color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #e5533d; /* Darker shade on hover */
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+    border-color: #ff6347; /* Highlight border on focus */
+    outline: none;
+}
+
+/* Contact Us Section */
+#contact {
+    background: #f9f9f9; /* Light background for the section */
+    padding: 2rem;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#contact p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Contact Us Button Style */
+.btn_contact {
+    display: inline-block; /* Makes the link appear as a button */
+    background-color: #ff6347; /* Button background color */
+    color: white; /* Text color */
+    padding: 0.8rem 2rem; /* Padding around the text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Removes underline */
+    font-size: 1rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+}
+
+.btn_contact:hover {
+    background-color: #e5533d; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slightly raises the button on hover */
+}
+
+.btn_contact:active {
+    background-color: #d44b36; /* Even darker shade when clicked */
+    transform: translateY(0); /* Returns to normal position */
+}
+
+.contact{
+    background-image: url(images/);
+}

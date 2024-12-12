@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started - GymHub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Fitness Hub</div>
+        <ul class="nav-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="diet-plan.html">Diet Plan</a></li>
+        </ul>
+        <div class="nav-right">
+            <a href="login.html" class="button">Login</a>
+            <a href="get-started.html" class="button">Get Started</a>
+        </div>
+    </nav>
+
+    <section class="forms-section">
+        <div id="get-started" class="form-section">
+            <h2>Get Started</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="goals">Your Goals:</label>
+                <select id="goals" name="goals" required>
+                    <option value="" disabled selected>Select your goal</option>
+                    <option value="weight-loss">Weight Loss</option>
+                    <option value="muscle-gain">Muscle Gain</option>
+                    <option value="fitness-maintenance">Fitness Maintenance</option>
+                </select>
+
+                <button type="submit">Submit</button>
+                <button type="button" id="close-getstarted">Close</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 GymHub. All rights reserved.</p>
+    </footer>
+</body>
+</html>
